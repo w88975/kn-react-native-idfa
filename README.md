@@ -24,6 +24,15 @@ If you're using Cocoapods, there is no need to this as when you're adding react-
 
 Add AdSupport.framework under "Link Binary With Libraries".
 
+# update IOS14 info!!
+
+You need to add this codes in info.plist
+
+```
+<key>NSUserTrackingUsageDescription</key>
+<string>We need to use your ad tracking permission to track ads</string>
+```
+
 ## How to use!
 
 ```
