@@ -2,7 +2,7 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
-  s.name         = "react-native-idfa"
+  s.name         = "aia-react-native-idfa"
   s.version      = package['version']
   s.summary      = package['description']
   s.author       = package['author']
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/ptomasroos/react-native-idfa.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/suruto/react-native-idfa.git", :tag => "#{s.version}" }
   s.source_files = "ios/IDFA/*.{h,m}"
 
   s.frameworks   = "AdSupport"

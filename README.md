@@ -1,30 +1,11 @@
-# react-native-idfa
+# aia-react-native-idfa
 
 Retrieve the advertising identifier across ios and android on react-native with this small library.
 Support RN > 0.56 with or without and cocoapods
 
 [![Build Status](https://travis-ci.com/ptomasroos/react-native-idfa.svg?branch=master)](https://travis-ci.com/ptomasroos/react-native-idfa) [![npm version](https://badge.fury.io/js/react-native-idfa.svg)](https://badge.fury.io/js/react-native-idfa) [![npm downloads](https://img.shields.io/npm/dm/react-native-idfa.svg)](https://www.npmjs.com/package/react-native-idfa)
 
-## How to install
-
-```
-npm install react-native-idfa
-react-native link
-```
-
-Since this library is using the advertising identifier, you must remember to add
-AdSupport in your IOS project.
-
-If you're using Cocoapods, there is no need to this as when you're adding react-native-idfa to your Podfile it will get added by default
-
-## Podfile
-```
-  pod 'react-native-idfa',  path: '../node_modules/react-native-idfa'
-```
-
-Add AdSupport.framework under "Link Binary With Libraries".
-
-# update IOS14 info!!
+## update IOS14 info!!
 
 You need to add this codes in info.plist
 
@@ -33,10 +14,29 @@ You need to add this codes in info.plist
 <string>We need to use your ad tracking permission to track ads</string>
 ```
 
+## How to install
+
+```
+npm install aia-react-native-idfa
+react-native link
+```
+
+Since this library is using the advertising identifier, you must remember to add
+AdSupport in your IOS project.
+
+If you're using Cocoapods, there is no need to this as when you're adding aia-react-native-idfa to your Podfile it will get added by default
+
+## Podfile
+```
+  pod 'aia-react-native-idfa',  path: '../node_modules/aia-react-native-idfa'
+```
+
+Add AdSupport.framework under "Link Binary With Libraries".
+
 ## How to use!
 
 ```
-import { IDFA } from 'react-native-idfa';
+import { IDFA } from 'aia-react-native-idfa';
 
 class Basic extends Component {
   state = {
